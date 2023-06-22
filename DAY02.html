@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+body {
+    background-color: rgb(140, 140, 236);
+}   </style>
+
+</head>
+
+<body>
+   
+    <h1>#7DaysOfCode Lógica JS - DIA 2</h1>
+
+   <h2> <form id="questionario">
+      <label for="nome">Qual o seu nome?</label>
+      <input type="text" id="nome" required><br>
+
+      <label for="idade">Quantos anos você tem?</label>
+      <input type="number" id="idade" required><br>
+
+      <label for="linguagem">Qual linguagem de programação você está estudando?</label>
+      <input type="text" id="linguagem" required><br>
+
+      <button type="submit">Enviar</button><br>
+    </form></h2>
+
+    <div id="respostas"></div>
+
+    <script>
+      const form = document.getElementById('questionario');
+      const respostasDiv = document.getElementById('respostas');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        const nome = document.getElementById('nome').value;
+        const idade = document.getElementById('idade').value;
+        const linguagem = document.getElementById('linguagem').value;
+
+        const mensagem = `Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!`;
+        respostasDiv.textContent = mensagem;
+      });
+    </script>
+
+    <button onclick="window.location.href = 'index.html';">Voltar para tela inicial</button>
+</body>
+</html>

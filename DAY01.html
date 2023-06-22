@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+    background-color: rgb(140, 140, 236);
+}
+h2{
+    color: rgb(81, 238, 42);
+}
+    </style>
+</head>
+<body>
+  <h3>DAY01 </h3>
+  <h1>Operações Boolenas</h1>
+  <h2>Conferir o console do navegador!</h2>
+  <script>
+    window.onload = function() {
+      let numeroUm = 1;
+      let stringUm = '1';
+      let numeroTrinta = 30;
+      let stringTrinta = '30';
+      let numeroDez = 10;
+      let stringDez = '10';
+
+      if (numeroUm == stringUm) {
+        console.log('As variáveis numeroUm e stringUm têm o mesmo valor, mas tipos diferentes');
+      } else {
+        console.log('As variáveis numeroUm e stringUm não têm o mesmo valor');
+      }
+
+      if (numeroTrinta === stringTrinta) {
+        console.log('As variáveis numeroTrinta e stringTrinta têm o mesmo valor e mesmo tipo');
+      } else {
+        console.log('As variáveis numeroTrinta e stringTrinta não têm o mesmo tipo');
+      }
+
+      if (numeroDez == stringDez) {
+        console.log('As variáveis numeroDez e stringDez têm o mesmo valor, mas tipos diferentes');
+      } else {
+        console.log('As variáveis numeroDez e stringDez não têm o mesmo valor');
+      }
+    };
+  </script>
+  <button onclick="window.location.href = 'index.html';">Voltar para tela inicial</button>
+</body>
+</html>
